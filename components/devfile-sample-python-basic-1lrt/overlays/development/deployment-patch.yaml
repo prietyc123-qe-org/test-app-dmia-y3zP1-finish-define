@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-1lrt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-oztq-tenant/test-app-dmia/devfile-sample-python-basic-1lrt@sha256:d80b0c7e782ffc4afec37e6f93369c769cb3a2b0637040138c0e832c81f216c8
+        name: my-python
+        resources: {}
+status: {}
